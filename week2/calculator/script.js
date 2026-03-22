@@ -1,21 +1,25 @@
-let display = document.getElementById("display");
+function calculate(operator) {
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
+    let result;
 
-function appendNumber(num) {
-    display.value += num;
-}
-
-function appendOperator(op) {
-    display.value += op;
-}
-
-function clearDisplay() {
-    display.value = "";
-}
-
-function calculate() {
-    try {
-        display.value = eval(display.value);
-    } catch (error) {
-        display.value = "Error";
+    if (isNaN(num1) || isNaN(num2)) {
+        result = "Enter numbers!";
+    } else {
+        if (operator === "+") {
+            result = num1 + num2;
+        } else if (operator === "-") {
+            result = num1 - num2;
+        } else if (operator === "*") {
+            result = num1 * num2;
+        } else if (operator === "/") {
+            if (num2 === 0) {
+                result = "Cannot divide by 0";
+            } else {
+                result = num1 / num2;
+            }
+        }
     }
+
+    document.getElementById("result").value = result;
 }
