@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Animation Square</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+
+        button {
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box"></div>
+<button id="start">Start Animation</button>
+
+<script>
+$(document).ready(function(){
+
+    $("#start").click(function(){
+
+        $("#box")
+        // Top Left → Bottom Left
+        .animate({ top: "300px", opacity: 0.5 }, 1000)
+
+        // Bottom Left → Bottom Right
+        .animate({ left: "300px", width: "150px", height: "150px" }, 1000)
+        .css("background-color", "red")
+
+        // Bottom Right → Top Right
+        .animate({ top: "0px", opacity: 0.4 }, 1000)
+        .css("background-color", "green")
+
+        // Top Right → Top Left
+        .animate({ top: "50px",left: "0px", width: "100px", height: "100px" }, 1000)
+        .css("background-color", "purple");
+
+    });
+
+});
+</script>
+
+</body>
+</html>

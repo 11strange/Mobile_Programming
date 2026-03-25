@@ -1,0 +1,41 @@
+week 3 day 1 exercise
+<!DOCTYPE html> 
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <style>
+        .bg-change {
+            background-color: rgb(233, 138, 229);
+        }
+    </style>
+
+    <script>
+    $(document).ready(function(){
+
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+
+        $("#show").click(function(){
+            $("p").show();
+        });
+
+        $("#color").click(function(){
+            $("body").addClass("bg-change");
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+
+    <p>Hide Show</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="color">Change Page Color</button>
+
+</body>
+</html>
