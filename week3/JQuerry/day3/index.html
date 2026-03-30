@@ -51,7 +51,7 @@
 
   <div id="profile-card">
     <div id="profile-photo">Photo</div>
-    <p id="student-name">John Doe</p>
+    <p id="student-name">Rohit KC</p>
     <div id="student-bio"><b>Bio:</b> A passionate learner of web development.</div>
     <ul id="skills-list">
       <li>HTML</li>
@@ -134,7 +134,12 @@
     });
 
     $("#change-name").click(function () {
-      $("#student-name").text("Rohit");
+      var nickname = $("#nickname-input").val();
+      if (nickname) {
+        $("#student-name").text(nickname);
+      } else {
+        $("#output").text("Please enter a nickname first.");
+      }
     });
 
     $("#show-bio").click(function () {
@@ -172,7 +177,7 @@
     });
 
     $("#reset-bg").click(function () {
-      $("#profile-card").css("background", "white");
+      $("#profile-card").css("background", "");
     });
 
     // 4. HIDE & SHOW
@@ -194,7 +199,7 @@
     });
 
     $("#fade-in").click(function () {
-      $("#profile-card").fadeIn();
+      $("#profile-card").fadeTo("fast", 1);
     });
 
     $("#fade-half").click(function () {
@@ -227,7 +232,7 @@
       function () { $(this).removeClass("shadow"); }
     );
 
-    $("#nickname-input").keypress(function (e) {
+    $("#nickname-input").keydown(function (e) {
       $("#output").text("Key pressed: " + e.key);
     });
   </script>
