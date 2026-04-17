@@ -1,0 +1,20 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#1A1A1A" rx="12"/>
+  <polygon points="80,10 120,32 120,78 80,100 40,78 40,32" fill="#22C55E"/>
+  <polygon points="80,44 91,51 88,64 72,64 69,51" fill="#1A1A1A"/>
+  <polygon points="80,28 89,34 87,44 73,44 71,34" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <polygon points="96,38 104,48 100,58 90,55 89,44" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <polygon points="95,64 101,74 94,81 83,77 83,67" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <polygon points="65,67 75,67 75,77 64,81 57,74" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <polygon points="64,44 72,44 70,55 60,58 56,48" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect x="102" y="66" width="22" height="22" rx="6" fill="#1A1A1A"/>
+  <rect x="105" y="69" width="16" height="4" rx="1.5" fill="#F8F7F4"/>
+  <rect x="105" y="76" width="4" height="4" rx="1" fill="#22C55E"/>
+  <rect x="112" y="76" width="4" height="4" rx="1" fill="#22C55E"/>
+  <rect x="105" y="83" width="4" height="4" rx="1" fill="#F8F7F4"/>
+  <rect x="112" y="83" width="4" height="4" rx="1" fill="#22C55E"/>
+  <text x="146" y="52" font-family="Georgia, serif" font-size="36" font-weight="700" fill="white" letter-spacing="-1">futsal</text>
+  <text x="146" y="88" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#22C55E" letter-spacing="-1">book</text>
+  <line x1="146" y1="96" x2="380" y2="96" stroke="#444441" stroke-width="0.5"/>
+  <text x="146" y="110" font-family="Arial, sans-serif" font-size="10" fill="#5F5E5A" letter-spacing="2">BOOK · PLAY · WIN</text>
+</svg>
